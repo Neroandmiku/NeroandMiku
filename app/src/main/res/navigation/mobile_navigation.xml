@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.neroandmiku.ui.home.HomeFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_Calculadora"
+        android:name="com.example.neroandmiku.nav_Calculadora"
+        android:label="Calculadora"
+        tools:layout="@layout/fragment_nav__calculadora" />
+    <fragment
+        android:id="@+id/leon"
+        android:name="com.example.neroandmiku.leon"
+        android:label="Leon"
+        tools:layout="@layout/fragment_leon" />
+    <fragment
+        android:id="@+id/lobo"
+        android:name="com.example.neroandmiku.lobo"
+        android:label="Lobo"
+        tools:layout="@layout/fragment_lobo" />
+    <fragment
+        android:id="@+id/cacatua"
+        android:name="com.example.neroandmiku.cacatua"
+        android:label="Cacatua"
+        tools:layout="@layout/fragment_cacatua" />
+    <fragment
+        android:id="@+id/dolphin"
+        android:name="com.example.neroandmiku.dolphin"
+        android:label="Delfín"
+        tools:layout="@layout/fragment_dolphin" />
+    <fragment
+        android:id="@+id/nav_Dibujos2"
+        android:name="com.example.neroandmiku.nav_Dibujos2"
+        android:label="Dibujos"
+        tools:layout="@layout/fragment_nav__dibujos" />
+    <fragment
+        android:id="@+id/nav_Animales2"
+        android:name="com.example.neroandmiku.nav_Animales"
+        android:label="Animales"
+        tools:layout="@layout/fragment_nav__animales" />
+
+</navigation>

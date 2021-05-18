@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nav_Calculadora"
+    android:background="@drawable/fate">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="718dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="211dp"
+                android:orientation="vertical"
+                android:paddingVertical="5dp">
+
+                <EditText
+                    android:id="@+id/etNro1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="70dp"
+                    android:ems="10"
+                    android:hint="Ingrese el Nro1: "
+                    android:inputType="numberDecimal"
+                    android:padding="15dp"
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toTopOf="@+id/etResultado"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <EditText
+                    android:id="@+id/etNro2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="70dp"
+                    android:ems="10"
+                    android:hint="Ingrese el Nro2: "
+                    android:inputType="numberDecimal"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/etNro1" />
+
+
+                <EditText
+                    android:id="@+id/etResultado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:ems="10"
+                    android:hint="Resultado"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toTopOf="@+id/btnSalir"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="586dp"
+                android:orientation="vertical">
+
+
+                <Button
+                    android:id="@+id/btnDiv"
+                    android:layout_width="249dp"
+                    android:layout_height="wrap_content"
+                    android:text="Dividir"
+                    app:backgroundTint="#35251E" />
+
+                <Button
+                    android:id="@+id/btnSumar"
+                    android:layout_width="249dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sumar"
+                    app:backgroundTint="#A3CF77" />
+
+                <Button
+                    android:id="@+id/btnRestar"
+                    android:layout_width="252dp"
+                    android:layout_height="wrap_content"
+                    android:text="Restar"
+                    app:backgroundTint="#679EE1" />
+
+                <Button
+                    android:id="@+id/btnMulti"
+                    android:layout_width="249dp"
+                    android:layout_height="wrap_content"
+                    android:text="Multiplicar"
+                    app:backgroundTint="#290705" />
+
+                <Button
+                    android:id="@+id/btnSalir"
+                    android:layout_width="107dp"
+                    android:layout_height="wrap_content"
+                    android:text="Salir" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
